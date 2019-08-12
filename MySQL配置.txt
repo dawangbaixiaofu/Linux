@@ -1,0 +1,8 @@
+MySQL已经安装成功，下面是如何配置数据库。
+datadir=/var/lib/mysql
+pid-file=/var/run/mysqld/mysqld.pid
+mysql_install_db命令
+mysql_install_db --defaults-file=/etc/my.cnf --datadir/var/lib/mysql
+mysqld_safe --defaults-file=/etc/my.cnf &
+mysqladmin -uroot password '******' --socket=/var/lib/mysql/mysql.sock
+mysql -uroot -p --socket=/var/lib/mysql/mysql.sock
