@@ -1,2 +1,6 @@
 安装Mysql，使用yum进行安装；
-
+mysql_install_db命令用来创建数据库实例。
+参数说明：
+	--basedir=path MySql安装目录
+	--datadir=path MySQL数据目录
+	--user=user_name 
